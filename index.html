@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js" defer></script>
+        <script src="inputcontrol.js" defer></script>
+
+        <title>Fizzbuzz Page</title>
+    </head>
+
+    <body>
+        <form action="">
+            <button id="cleardivs">Clear DIVS</button>
+            <button id="makedivs">Make DIVS</button>
+            <label for="startval">Starting value</label>
+            <input id="startval" type="text" placeholder="Starting value">
+            <label for="endval">Ending value</label>
+            <input id="endval" type="text" placeholder="Ending value">
+            <label for="fizzval">Fizz value</label>
+            <input id="fizzval" type="text" placeholder="Fizz value">
+            <label for="buzzval">Buzz value</label>
+            <input id="buzzval" type="text" placeholder="Buzz value">
+        </form>
+        <h1>Output:</h1>
+        <div>
+            <label for="output1">Id number divides evenly with "Fizz" and "Buzz" value:</label>
+            <input id="output1" type="number" value="0" disabled>
+            <label for="output2">Id number divides evenly with "Fizz" value ONLY:</label>
+            <input id="output2" type="number" value="0" disabled>
+            <label for="output3">Id number divides evenly with "Buzz" value ONLY:</label>
+            <input id="output3" type="number" value="0" disabled>
+            <label for="output4">Does not divide with "Fizz" or "Buzz" value:</label>
+            <input id="output4" type="number" value="0" disabled>
+        </div>
+        <main>
+            <div id="divgen">
+
+            </div>
+
+        </main>
+    </body>
+
+</html>
