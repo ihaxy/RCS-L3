@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="script.js" defer></script>
-        <script src="inputcontrol.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer>
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer>
+    </script>
+    <script src="vanillascript.js" defer></script>
 
-        <title>Fizzbuzz Page</title>
-    </head>
 
-    <body>
-        <form action="">
-            <button id="cleardivs">Clear DIVS</button>
-            <button id="makedivs">Make DIVS</button>
-            <label for="startval">Starting value</label>
-            <input id="startval" type="text" placeholder="Starting value">
-            <label for="endval">Ending value</label>
-            <input id="endval" type="text" placeholder="Ending value">
-            <label for="fizzval">Fizz value</label>
-            <input id="fizzval" type="text" placeholder="Fizz value">
-            <label for="buzzval">Buzz value</label>
-            <input id="buzzval" type="text" placeholder="Buzz value">
-        </form>
-        <h1>Output:</h1>
-        <div>
-            <label for="output1">Id number divides evenly with "Fizz" and "Buzz" value:</label>
-            <input id="output1" type="number" value="0" disabled>
-            <label for="output2">Id number divides evenly with "Fizz" value ONLY:</label>
-            <input id="output2" type="number" value="0" disabled>
-            <label for="output3">Id number divides evenly with "Buzz" value ONLY:</label>
-            <input id="output3" type="number" value="0" disabled>
-            <label for="output4">Does not divide with "Fizz" or "Buzz" value:</label>
-            <input id="output4" type="number" value="0" disabled>
+    <title>Fizzbuzz Page</title>
+</head>
+
+<body>
+    <form>
+        <div class="inputvalues">
+            <div class="inputs">
+        <label for="startval">Starting value</label>
+        <input id="startval" type="text" placeholder="1">
+        <label for="endval">Ending value</label>
+        <input id="endval" type="text" placeholder="100">
+        <label for="fizzval">Fizz value</label>
+        <input id="fizzval" type="text" placeholder="3">
+        <label for="buzzval">Buzz value</label>
+        <input id="buzzval" type="text" placeholder="5">
+    </div>
+        <div class="buttons">
+        <button id="cleardivs" onclick="deleteDivs()">Clear DIVS</button>
+        <button id="makedivs" onclick="generateDivs()">Make DIVS</button>
         </div>
-        <main>
-            <div id="divgen">
+    </div>
+    </form>
+    <h1>Output:</h1>
+    <div class="outputvalues">
+        <label for="output1">Id number divides evenly with "Fizz" and "Buzz" value:</label>
+        <input id="output1" type="number" value="0" disabled>
+        <label for="output2">Id number divides evenly with "Fizz" value ONLY:</label>
+        <input id="output2" type="number" value="0" disabled>
+        <label for="output3">Id number divides evenly with "Buzz" value ONLY:</label>
+        <input id="output3" type="number" value="0" disabled>
+        <label for="output4">Does not divide with "Fizz" or "Buzz" value:</label>
+        <input id="output4" type="number" value="0" disabled>
+    </div>
+    <main>
+        <div id="divgen">
 
-            </div>
+        </div>
 
-        </main>
-    </body>
+    </main>
+</body>
 
 </html>
