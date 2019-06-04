@@ -1,18 +1,12 @@
 //Global variables
-// let startingvalue = parseInt(document.getElementById("startval").value, 10);
-// console.log(startingvalue);
-// let endingvalue =  parseInt(document.getElementById("endval").value, 10);
-// console.log(endingvalue);
-// let fizzvalue = parseInt(document.getElementById("fizzval").value, 10);
-// console.log(fizzvalue);
-// let buzzvalue = parseInt(document.getElementById("buzzval").value, 10);
-// console.log(buzzvalue);
+let startingvalue = parseInt(document.getElementById("startval").value, 1);
+let endingvalue =  parseInt(document.getElementById("endval").value, 1);
+let fizzvalue = parseInt(document.getElementById("fizzval").value, 1);
+let buzzvalue = parseInt(document.getElementById("buzzval").value, 1);
 
 //Listeners
-//document.getElementById('makedivs').addEventListener("click", generateDivs());
-//$('#cleardivs').on("click", deleteDivs);
-//$('#divgen').click(generateDivs());
-
+document.getElementById('makedivs').addEventListener("click", generateDivs());
+document.getElementById('cleardivs').addEventListener("click", deleteDivs());
 
 //Logic
 function createDivs(startingvalue, endingvalue, fizzvalue, buzzvalue) {
@@ -37,16 +31,13 @@ function createDivs(startingvalue, endingvalue, fizzvalue, buzzvalue) {
 }
 
 //Button Functions
-// function deleteDivs() {
-//     //     for (i = $('#divgen > div').length-1; i < $('#divgen > div').length; i--){
-//     //         $('div'+ i).remove();
-//     //     }
-//   for(i = document.getElementById('divgen').childElementCount; i < document.getElementById('divgen').childElementCount+1; i--) {
-//       document.getElementById('div' + i).remove();
-//   }
-//     document.getElementById('cleardivs').style.color = "red";
-//     console.log(document.getElementById('divgen').childElementCount);
-// }
+function deleteDivs() {
+  for(i = document.getElementById('divgen').childElementCount; i > 0; i--) {
+      document.getElementById('div' + i).remove();
+      console.log("Deleted element with id " + i)
+  }
+    console.log(document.getElementById('divgen').childElementCount);
+}
 
 function generateDivs() {
     console.log("Divs created");
@@ -54,8 +45,6 @@ function generateDivs() {
 }
 
 console.log('Running');
-// createDivs(1, 30, 3, 5);
-// createDivs(51, 80, 3, 5);
-// createDivs(201, 210, 3, 5);
+
 
 

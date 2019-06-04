@@ -24,3 +24,7 @@
 .normal {
     background-color: green;
 }
+
+#hack {
+    display: none;
+}

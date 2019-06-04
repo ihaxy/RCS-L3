@@ -1,17 +1,12 @@
 //Global variables
 let startingvalue = parseInt($("#startval").value, 10);
-console.log(startingvalue);
 let endingvalue =  parseInt($("#endval").value, 10);
-console.log(endingvalue);
 let fizzvalue = parseInt($("#fizzval").value, 10);
-console.log(fizzvalue);
 let buzzvalue = parseInt($("#buzzval").value, 10);
-console.log(buzzvalue);
 
 //Listeners
-// document.getElementById('makedivs').addEventListener("click", generateDivs());
-// $('#cleardivs').on("click", deleteDivs);
-//$('#divgen').click(generateDivs());
+$('#cleardivs').on("click", deleteDivs);
+$('#makedivs').click(generateDivs());
 
 
 //Logic
