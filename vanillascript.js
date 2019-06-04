@@ -16,35 +16,46 @@
 
 //Logic
 function createDivs(startingvalue, endingvalue, fizzvalue, buzzvalue) {
+    const cont = document.getElementById('divgen');
     for (let i = startingvalue; i <= endingvalue; i++) {
         let creatediv = document.createElement('div');
         creatediv.setAttribute('id', 'div' + i);
         creatediv.textContent = "" + i;
-        document.getElementById('divgen').appendChild(creatediv);
+
         if (i % fizzvalue === 0 && i % buzzvalue === 0) {
-            document.getElementById('div' + i).setAttribute("class", 'fizzbuzz');
+            creatediv.setAttribute("class", 'fizzbuzz');
         } else if (i % fizzvalue === 0) {
-            document.getElementById('div' + i).setAttribute("class", 'fizz');
+            creatediv.setAttribute("class", 'fizz');
         } else if (i % buzzvalue === 0) {
-            document.getElementById('div' + i).setAttribute("class", 'buzz');
+            creatediv.setAttribute("class", 'buzz');
         } else {
-            document.getElementById('div' + i).setAttribute("class", 'normal');
+            creatediv.setAttribute("class", 'normal');
         }
+        cont.appendChild(creatediv);
     }
     console.log("createDivs executed");
 }
 
 //Button Functions
-function deleteDivs() {
-    //     for (i = $('#divgen > div').length-1; i < $('#divgen > div').length; i--){
-    //         $('div'+ i).remove();
-    //     }
-    document.getElementById('cleardivs').style.color = "red";
-    console.log("Divs cleared");
-}
+// function deleteDivs() {
+//     //     for (i = $('#divgen > div').length-1; i < $('#divgen > div').length; i--){
+//     //         $('div'+ i).remove();
+//     //     }
+//   for(i = document.getElementById('divgen').childElementCount; i < document.getElementById('divgen').childElementCount+1; i--) {
+//       document.getElementById('div' + i).remove();
+//   }
+//     document.getElementById('cleardivs').style.color = "red";
+//     console.log(document.getElementById('divgen').childElementCount);
+// }
 
 function generateDivs() {
     console.log("Divs created");
     createDivs(1, 30, 3, 5);
 }
+
+console.log('Running');
+// createDivs(1, 30, 3, 5);
+// createDivs(51, 80, 3, 5);
+// createDivs(201, 210, 3, 5);
+
 

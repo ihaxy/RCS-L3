@@ -1,4 +1,3 @@
-
 #divgen {
     display: grid;
     grid-template-columns: repeat(20, 30px);
@@ -10,7 +9,18 @@
     height: 25px;
 }
 
-.inputs {
-    display: grid;
-    grid-template-columns: 1fr;
+.fizzbuzz {
+    background-color: royalblue;
+}
+
+.fizz {
+    background-color: red;
+}
+
+.buzz {
+    background-color: purple;
+}
+
+.normal {
+    background-color: green;
 }
