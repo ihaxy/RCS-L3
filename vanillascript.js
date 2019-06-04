@@ -5,8 +5,8 @@ let fizzvalue = parseInt(document.getElementById("fizzval").value, 1);
 let buzzvalue = parseInt(document.getElementById("buzzval").value, 1);
 
 //Listeners
-document.getElementById('makedivs').addEventListener("click", generateDivs());
-document.getElementById('cleardivs').addEventListener("click", deleteDivs());
+document.getElementById('makedivs').addEventListener("click", generateDivs);
+document.getElementById('cleardivs').addEventListener("click", deleteDivs);
 
 //Logic
 function createDivs(startingvalue, endingvalue, fizzvalue, buzzvalue) {
@@ -41,7 +41,7 @@ function deleteDivs() {
 
 function generateDivs() {
     console.log("Divs created");
-    createDivs(1, 30, 3, 5);
+createDivs(1, 30, 3, 5);
 }
 
 console.log('Running');

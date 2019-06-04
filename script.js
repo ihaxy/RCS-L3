@@ -1,8 +1,8 @@
 //Global variables
-let startingvalue = parseInt($("#startval").value, 10);
-let endingvalue =  parseInt($("#endval").value, 10);
-let fizzvalue = parseInt($("#fizzval").value, 10);
-let buzzvalue = parseInt($("#buzzval").value, 10);
+let startingvalue = parseInt($("#startval").value, 1);
+let endingvalue =  parseInt($("#endval").value, 1);
+let fizzvalue = parseInt($("#fizzval").value, 1);
+let buzzvalue = parseInt($("#buzzval").value, 1);
 
 //Listeners
 $('#cleardivs').on("click", deleteDivs);
@@ -39,6 +39,6 @@ console.log("Divs cleared");
 
 function generateDivs(){
 console.log("Divs created");
-createDivs(1, 30, 3, 5);
+createDivs(startingvalue, endingvalue, fizzvalue, buzzvalue);
 }
 
