@@ -28,3 +28,11 @@
 #divgen {
     grid-auto-rows: 50px;
 }
+
+.outputvalues {
+    display: inline;
+}
+
+.inputoutput {
+    margin-bottom: 30px;
+}

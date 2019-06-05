@@ -3,6 +3,10 @@
         display: grid;
         grid-template-columns: repeat(15, 70px);
     }
+    .inputoutput {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 991px) {

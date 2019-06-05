@@ -15,50 +15,67 @@
 <body>
     <div class="container">
         <h1>FizzBuzz example</h1>
-        <div class="inputvalues">
-            <form>
-                <div class="inputs">
-                    <div class="startval">
-                        <label for="startval">Starting value:</label>
-                        <input id="startval" type="number" placeholder="1" min="1" max="99">
-                    </div>
-                    <div class="endval">
-                        <label for="endval">Ending value:</label>
-                        <input id="endval" type="number" placeholder="100" min="2" max="100">
-                    </div>
-                    <div class="fizzval">
-                        <label for="fizzval">Fizz value:</label>
-                        <input id="fizzval" type="text" placeholder="3" s>
-                    </div>
-                    <div class="buzzval">
-                        <label for="buzzval">Buzz value:</label>
-                        <input id="buzzval" type="text" placeholder="5">
-                    </div>
+        <div class="inputoutput">
+            <div>
+                <h2>Input:</h2>
+                <div class="inputvalues">
+                    <form>
+                        <div class="inputs">
+                            <div class="startval">
+                                <label for="startval">Starting value:</label>
+                                <input id="startval" type="number" placeholder="1" min="1" max="99">
+                            </div>
+                            <div class="endval">
+                                <label for="endval">Ending value:</label>
+                                <input id="endval" type="number" placeholder="100" min="2" max="100">
+                            </div>
+                            <div class="fizzval">
+                                <label for="fizzval">Fizz value:</label>
+                                <input id="fizzval" type="text" placeholder="3" s>
+                            </div>
+                            <div class="buzzval">
+                                <label for="buzzval">Buzz value:</label>
+                                <input id="buzzval" type="text" placeholder="5">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button id="makedivs" type="button">Make DIVS</button>
+                            <button id="cleardivs" type="button">Clear DIVS</button>
+                            <button id="reset" type="reset">Reset</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="buttons">
-                    <button id="makedivs" type="button">Make DIVS</button>
-                    <button id="cleardivs" type="button">Clear DIVS</button>
-                    <button id="reset" type="reset">Reset</button>
-                </div>
-            </form>
-        </div>
-        <h2>Output:</h2>
-        <div class="outputvalues">
-            <label for="output1">Id number divides evenly with "Fizz" and "Buzz" value:</label>
-            <input id="output1" type="number" value="0" disabled>
-            <label for="output2">Id number divides evenly with "Fizz" value ONLY:</label>
-            <input id="output2" type="number" value="0" disabled>
-            <label for="output3">Id number divides evenly with "Buzz" value ONLY:</label>
-            <input id="output3" type="number" value="0" disabled>
-            <label for="output4">Does not divide with "Fizz" or "Buzz" value:</label>
-            <input id="output4" type="number" value="0" disabled>
-        </div>
-        <main>
-            <div id="divgen">
-
             </div>
-        </main>
+            <div>
+                <h2>Output:</h2>
+                <div class="outputvalues">
+                    <div>
+                        <label for="output1">Id number divides evenly with "Fizz" and "Buzz" value:</label>
+                        <input id="output1" type="number" value="0" disabled>
+                    </div>
+                    <div>
+                        <label for="output2">Id number divides evenly with "Fizz" value ONLY:</label>
+                        <input id="output2" type="number" value="0" disabled>
+                    </div>
+                    <div>
+                        <label for="output3">Id number divides evenly with "Buzz" value ONLY:</label>
+                        <input id="output3" type="number" value="0" disabled>
+                    </div>
+                    <div>
+                        <label for="output4">Does not divide with "Fizz" or "Buzz" value:</label>
+                        <input id="output4" type="number" value="0" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <main>
+        <div id="divgen">
+
+        </div>
+    </main>
+
 </body>
 
 </html>
