@@ -2,10 +2,12 @@
     #divgen {
         display: grid;
         grid-template-columns: repeat(15, 70px);
+        justify-content: center;
     }
     .inputoutput {
         display: grid;
         grid-template-columns: 2fr 3fr;
+        justify-items: center;
     }
 }
 
@@ -13,6 +15,7 @@
     #divgen {
         display: grid;
         grid-template-columns: repeat(10, 70px);
+        justify-content: center;
     }
 }
 
@@ -20,5 +23,6 @@
     #divgen {
         display: grid;
         grid-template-columns: repeat(5, 70px);
+        justify-content: center;
     }
 }

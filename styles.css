@@ -2,6 +2,7 @@
     border: 0.5px solid black;
     width: 65px;
     height: 40px;
+    border-radius: 10px;
 }
 
 .fizzbuzz {
@@ -35,4 +36,8 @@
 
 .inputoutput {
     margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
 }
